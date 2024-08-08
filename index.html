@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijayratna Enterprises</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+8BQBmZrVjqnHkvD56vbZ2yJXq2N7lJlwb0"
+      crossorigin="anonymous"
+    />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Custom Button Styles */
+      .btn-3d {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px #444;
+      }
+
+      .btn-3d:hover {
+        transform: translateY(2px);
+        box-shadow: 0 2px #444;
+      }
+
+      .btn-3d:active {
+        transform: translateY(4px);
+        box-shadow: none;
+      }
+
+      .btn-3d::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        z-index: -1;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      .btn-3d:hover::before {
+        opacity: 1;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #6366f1;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+          <a class="mr-5 hover:text-gray-900" href="#home">Home</a>
+          <a class="mr-5 hover:text-gray-900" href="./Productm.html"
+            >Products</a
+          >
+          <a class="mr-5 hover:text-gray-900" href="#Services">Services</a>
+          <a class="mr-5 hover:text-gray-900" href="#About">About</a>
+          <a class="mr-5 hover:text-gray-900" href="#Contact">Contact</a>
+        </nav>
+        <a
+          class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+        >
+          <span class="ml-3 text-xl">Vijayratna Enterprises</span>
+        </a>
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+          <button
+            class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+          >
+          Contact Us
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-1"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-gray-600 body-font" id="home">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            Vijayratna Enterprises <br class="hidden lg:inline-block" />
+            <span class="text-indigo-500">Get The Best Quality Here</span>
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            We offer sales and service for all types of printers, including toner refilling and maintenance. Trust us for reliable, high-quality solutions to meet all your printing needs.
+          </p>
+          <div class="flex justify-center">
+            <a href="#services" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              Learn More
+            </a>
+            <a href="#contact" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="object-cover object-center rounded"
+            alt="printers"
+            src="https://img.freepik.com/free-photo/office-printer-among-documents-productivity-tools_157027-4121.jpg?w=1380&t=st=1721191450~exp=1721192050~hmac=ed54c4fbb85232a835b5fb5b4a35565cf750ccf186fcab9c6477e2e996ad7188"
+          />
+        </div>
+      </div>
+    </section>
+    
+
+<!-- Products Section -->
+<section class="text-gray-600 body-font overflow-hidden" id="Products">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+      <img
+        alt="ecommerce"
+        class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+        src="https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/6/U/6UU48A-1_T1680354480.png" 
+      />
+      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">
+          HP
+        </h2>
+        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
+          HP Smart Tank 670 All-in-One Printer
+        </h1>
+        <div class="flex mb-4">
+          <span class="flex items-center">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 text-indigo-500"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+            <!-- Repeat or adjust SVGs as necessary -->
+            <span class="text-gray-600 ml-3">4 Reviews</span>
+          </span>
+          <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                ></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <p class="leading-relaxed">
+          Low-cost, high-volume color printing with the HP Smart Tank 670 All-in-One Printer. Ideal for home use, this printer offers print speeds up to 22 ppm (black) and 21 ppm (color), and supports both USB and wireless (Wi-Fi®) connectivity. Enjoy duplex printing capabilities and versatile print, copy, and scan functions.
+        </p>
+        <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+          <div class="flex">
+            <span class="mr-3">Color</span>
+            <button class="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
+            <button class="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none"></button>
+            <button class="border-2 border-gray-300 ml-1 bg-indigo-500 rounded-full w-6 h-6 focus:outline-none"></button>
+          </div>
+          <div class="flex ml-6 items-center">
+            <span class="mr-3">Size</span>
+            <div class="relative">
+              <select
+                class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
+              >
+                <option>A4</option>
+                <!-- Adjust size options as necessary -->
+              </select>
+              <span
+                class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <span class="title-font font-medium text-2xl text-gray-900">$58.00</span>
+          <button
+            class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+          >
+            Add to Cart
+          </button>
+          <button
+            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Add more product cards as needed -->
+
+<!-- Services Section -->
+<section class="text-gray-600 body-font" id="Services">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          Our Services
+        </h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+        Offering a range of services to meet your printing needs, from high-quality toner and ink cartridges to refurbished printers and expert repair services.
+      </p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img
+            class="h-40 rounded w-full object-cover object-center mb-6"
+            src="https://img.freepik.com/premium-psd/isolated-toner-printer_23-2150755734.jpg"
+            alt="Toner Cartridges"
+          />
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+            Toner Cartridges
+          </h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+            High-Quality Toner
+          </h2>
+          <p class="leading-relaxed text-base">
+            We offer premium toner cartridges designed to provide clear, sharp prints while ensuring high performance and reliability.
+          </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img
+            class="h-40 rounded w-full object-cover object-center mb-6"
+            src="https://img.freepik.com/free-psd/3d-icon-with-ink-cartridges_23-2150813736.jpg"
+            alt="Ink Cartridges"
+          />
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+            Ink Cartridges
+          </h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+            All Types of Ink
+          </h2>
+          <p class="leading-relaxed text-base">
+            We provide a wide range of ink cartridges for various printer models, ensuring vibrant and consistent print quality.
+          </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img
+            class="h-40 rounded w-full object-cover object-center mb-6"
+            src="https://i1.adis.ws/i/canon/maxify-gx7050-ambient-reception-03_1920x1080-66d4a17cd389?w=100%&sm=aspect&aspect=16:9&qlt=100&scaleFit=poi&poi=0.4375,0.3888888888888889,0.125,0.2222222222222222&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)"
+            alt="Refurbished Printer"
+          />
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+            Refurbished Printers
+          </h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+            Reliable Refurbished Models
+          </h2>
+          <p class="leading-relaxed text-base">
+            Find high-quality refurbished printers at affordable prices. Each printer is thoroughly tested to ensure optimal performance.
+          </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img
+            class="h-40 rounded w-full object-cover object-center mb-6"
+            src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Printer Repairing"
+          />
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+            Printer Repairing
+          </h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+            Expert Repairs
+          </h2>
+          <p class="leading-relaxed text-base">
+            Our skilled technicians provide reliable printer repair services to keep your equipment running smoothly and efficiently.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section class="text-gray-600 body-font" id="About">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img
+          alt="Printer Office Setting"
+          class="object-cover object-center h-full w-full"
+          src="https://img.freepik.com/free-photo/printer-office-setting-ready-days-work_157027-4215.jpg?t=st=1721192182~exp=1721195782~hmac=62995310dc4d2a5bdb9beacf0f129ddc2022d3935b6434981199d7d585a8eb90&w=1380"
+        />
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-10 h-10"
+              viewBox="0 0 24 24"
+            >
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
+              Vidyut Shah
+            </h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <p class="text-base">
+              Proprietor of Vijayratna Enterprises, Vidyut Shah, has been leading the company with immense expertise in the printer industry since 2009. Located in Pune, Maharashtra, Vijayratna Enterprises specializes in providing high-quality printers and related services to clients.
+            </p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">
+            Vijayratna Enterprises, established in 2009, has developed a reputation for excellence in the printer industry. Our focus is on providing top-notch printers and exceptional customer service. We are committed to ensuring that our clients receive reliable and high-quality products tailored to their needs.
+          </p>
+          <a class="text-indigo-500 inline-flex items-center">
+            Learn More
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
+      What Our Clients Say
+    </h1>
+    <div class="flex flex-wrap -m-4">
+      <!-- Testimonial 1 -->
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="block w-5 h-5 text-gray-400 mb-4"
+            viewBox="0 0 975.036 975.036"
+          >
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+            ></path>
+          </svg>
+          <p class="leading-relaxed mb-6">
+            "Vijayratna Enterprises provided us with exceptional service and high-quality printers. Their attention to detail and customer support exceeded our expectations. We highly recommend their services for anyone in need of reliable printing solutions."
+          </p>
+          <a class="inline-flex items-center">
+            <img
+              alt="testimonial"
+              src="https://dummyimage.com/106x106"
+              class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+            />
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Arun Kumar</span>
+              <span class="text-gray-500 text-sm">IT Manager</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="block w-5 h-5 text-gray-400 mb-4"
+            viewBox="0 0 975.036 975.036"
+          >
+            <path
+              d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+            ></path>
+          </svg>
+          <p class="leading-relaxed mb-6">
+            "Working with Vijayratna Enterprises has been a pleasure. Their knowledgeable staff and top-quality products have greatly benefited our office operations. The reliability of their printers is unmatched, and their support is always prompt."
+          </p>
+          <a class="inline-flex items-center">
+            <img
+              alt="testimonial"
+              src="https://dummyimage.com/107x107"
+              class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+            />
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Rita Patel</span>
+              <span class="text-gray-500 text-sm">Office Administrator</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="text-gray-600 body-font relative" id="Contact">
+      <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div
+          class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            class="absolute inset-0"
+            frameborder="0"
+            title="map"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="no"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15134.627660556143!2d73.8698568!3d18.4991934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1b05599c0f3%3A0x84c620d6133cab22!2sVijayratna%20Enterprises!5e0!3m2!1sen!2sin!4v1721191092920!5m2!1sen!2sin"
+            style="filter: grayscale(1) contrast(1.2) opacity(0.4)"
+          ></iframe>
+          <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+            <div class="lg:w-1/2 px-6">
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              >
+                ADDRESS
+              </h2>
+              <p class="mt-1">
+                1st Floor, Office no 11,Santosh heights, Above Sangli urban
+                bank, Opposite Apsara theatre, near Seven loves
+                chowk,Pune-411037
+              </p>
+            </div>
+            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              >
+                EMAIL
+              </h2>
+              <a class="text-indigo-500 leading-relaxed"
+                >vidyutshah71@yahoo.co.in</a
+              >
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4"
+              >
+                PHONE
+              </h2>
+              <p class="leading-relaxed">9766607420 , 9422086354</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
+          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
+            Feedback
+          </h2>
+          <p class="leading-relaxed mb-5 text-gray-600">
+            Post-ironic portland shabby chic echo park, banjo fashion axe
+          </p>
+          <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-600"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-600"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            ></textarea>
+          </div>
+          <button
+            class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
+            Button
+          </button>
+          <p class="text-xs text-gray-500 mt-3">
+            Sales and service of all types of printers. Specialists in all types
+            of printers tonner refilling.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Vijayratna Enterprises. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-iDpQT4jyjQ4V7kGJrXKzQbbX8DmXzVXCzO3JS1H9u61uUeT7Y1yjBtF3MA1AvVmX"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-w0oMb4PpNp6MlsL+R+OlshzS4tqVvOrZ4g/pdzZi1rEc08/45wDg4By0B0T6v20A"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
