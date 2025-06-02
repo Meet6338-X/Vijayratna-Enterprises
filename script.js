@@ -396,9 +396,8 @@ async function showcaseItems() {
                           </h4>
                         </a>
                         
-                        <a href="#" class="showcase-category">${
-                          elem.productCategory
-                        }</a>
+                        <a href="#" class="showcase-category">${elem.productCategory
+      }</a>
                         
                         <div class="price-box">
                         <div>
@@ -408,10 +407,9 @@ async function showcaseItems() {
                           <del>M.R.P:&#8377; ${elem.mrp}</del>
                         </div>
                         <div class="btn-con">
-                        <a href="#" class="addBtn"><button >Add</button></a>
-                        <a href="https://wa.me/+919422086354?text=${
-                          elem.productName
-                        }" class="infoBtn"><button >Info</button></a>
+                      <!--  <a href="#" class="addBtn"><button >Add</button></a> --!>
+                        <a href="https://wa.me/+919422086354?text=${elem.productName
+      }" class="infoBtn"><button >Get </button></a>
                         </div>
                       </div>
                     </div>`;
@@ -441,9 +439,8 @@ async function showcaseItems() {
                           </h4>
                         </a>
 
-                        <a href="#" class="showcase-category">${
-                          elem.productCategory
-                        }</a>
+                        <a href="#" class="showcase-category">${elem.productCategory
+      }</a>
 
                         <div class="price-box">
                         <div>
@@ -454,9 +451,8 @@ async function showcaseItems() {
                         </div>
                         <div class="btn-con">
                         <a href="#" class="addBtn"><button >Add</button></a>
-                        <a href="https://wa.me/+919422086354?text=${
-                          elem.productName
-                        }" class="infoBtn"><button >Info</button></a>
+                        <a href="https://wa.me/+919422086354?text=${elem.productName
+      }" class="infoBtn"><button >Info</button></a>
                         </div>
                       </div>
                       </div>
@@ -487,9 +483,8 @@ async function showcaseItems() {
                           </h4>
                         </a>
 
-                        <a href="#" class="showcase-category">${
-                          elem.productCategory
-                        }</a>
+                        <a href="#" class="showcase-category">${elem.productCategory
+      }</a>
 
                         <div class="price-box">
                         <div>
@@ -500,9 +495,8 @@ async function showcaseItems() {
                         </div>
                         <div class="btn-con">
                         <a href="#" class="addBtn"><button >Add</button></a>
-                        <a href="https://wa.me/+919422086354?text=${
-                          elem.productName
-                        }" class="infoBtn"><button >Info</button></a>
+                        <a href="https://wa.me/+919422086354?text=${elem.productName
+      }" class="infoBtn"><button >Info</button></a>
                         </div>
                       </div>
                       </div>
@@ -533,9 +527,8 @@ async function showcaseItems() {
                           </h4>
                         </a>
 
-                        <a href="#" class="showcase-category">${
-                          elem.productCategory
-                        }</a>
+                        <a href="#" class="showcase-category">${elem.productCategory
+      }</a>
 
                         <div class="price-box">
                         <div>
@@ -546,9 +539,8 @@ async function showcaseItems() {
                         </div>
                         <div class="btn-con">
                         <a href="#" class="addBtn"><button >Add</button></a>
-                        <a href="https://wa.me/+919422086354?text=${
-                          elem.productName
-                        }" class="infoBtn"><button >Info</button></a>
+                        <a href="https://wa.me/+919422086354?text=${elem.productName
+      }" class="infoBtn"><button >Info</button></a>
                         </div>
                       </div>
                       </div>
