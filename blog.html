@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Vijayratna Enterprises</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @media print {
+        .no-print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <img
+            src="Images/v.png"
+            alt="Vijayratna Logo"
+            class="w-10 h-10 mr-2"
+          />
+          <h1 class="text-2xl font-bold">Vijayratna Blog</h1>
+        </div>
+        <button
+          onclick="window.print()"
+          class="bg-white text-indigo-600 px-4 py-2 rounded shadow no-print"
+        >
+          Print Page
+        </button>
+      </div>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="container mx-auto py-8 px-4">
+      <article class="bg-white p-6 rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-2">Top 5 Business Trends of 2025</h2>
+        <p class="text-sm text-gray-500 mb-4">
+          Posted on June 3, 2025 by Admin
+        </p>
+        <p class="mb-4">
+          In today's fast-changing world, businesses must adapt to new trends to
+          stay relevant. Here are the top 5 business trends dominating 2025:
+        </p>
+        <ul class="list-disc pl-5 space-y-2 mb-4">
+          <li>AI-Powered Automation</li>
+          <li>Sustainable and Eco-Friendly Practices</li>
+          <li>Remote and Hybrid Work Models</li>
+          <li>Personalized Customer Experiences</li>
+          <li>Digital Payments and Fintech Growth</li>
+        </ul>
+        <p>
+          At Vijayratna Enterprises, we are embracing these trends to deliver
+          the best value to our clients and partners.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-600 text-white text-center p-4 mt-8">
+      <p>&copy; 2025 Vijayratna Enterprises. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
