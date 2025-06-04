@@ -86,7 +86,7 @@ let newArr = [
     TotalAmount: 0,
   },
   {
-    img: "https://th.bing.com/th/id/OIP.i_P5VB9D1DeQQn7ltICd-wHaGd?w=188&h=180&c=7&r=0&o=5&pid=1.7",
+    img: "https://huyhoang.vn/uploads/canon%204412.jpg",
     productName: "canon 4412 (Refurbished)",
     productCategory: "printer",
     mrp: 12500,
@@ -103,7 +103,7 @@ let newArr = [
 console.log(newArr[0].price());
 let trendingArr = [
   {
-    img: "https://th.bing.com/th/id/OIP.47_WaNNM2uY_GXt59ke2jwHaHa?w=163&h=180&c=7&r=0&o=5&pid=1.7",
+    img: "https://i8.amplience.net/i/epsonemear/22925-productpicture-lores-en-l3110_hero",
     productName: "Epson l3110 (Refurbished)",
     productCategory: "printer",
     mrp: 6500,
@@ -217,7 +217,7 @@ let popularArr = [
     TotalAmount: 0,
   },
   {
-    img: "https://th.bing.com/th/id/OIP.CPdbLquvarPlHWYDHEU53gHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7",
+    img: "https://th.bing.com/th/id/OIP.YtXcx8O1ZVeONmksFkmxgwHaF-?rs=1&pid=ImgDetMain",
     productName: "Dot matrix Epson lx300+ii (Refurbished)",
     productCategory: "printer",
     mrp: 5000,
@@ -259,7 +259,7 @@ let popularArr = [
     TotalAmount: 0,
   },
   {
-    img: "https://th.bing.com/th/id/OIP.qOsubMYmEraDMa41GkdbRAHaHa?w=193&h=193&c=7&r=0&o=5&pid=1.7",
+    img: "https://cdn.shopify.com/s/files/1/1521/3612/products/eps-l3210_11-87dcc947ae9bc80c2e16261866552889-1024-1024_1024x1024.png?v=1632217604",
     productName: "Epson l3210 (New)",
     productCategory: "printer",
     mrp: 14000,
@@ -334,7 +334,7 @@ let latestArr = [
     img: "https://th.bing.com/th/id/OIP.XZMAS9p-gvmxTLEybLIAbQAAAA?w=199&h=199&c=7&r=0&o=5&pid=1.7",
     productName: "HP LJ 1007",
     productCategory: "printer",
-    mrp: 111.11, // Adjusted to give a 10% discount
+    mrp: 15000, // Adjusted to give a 10% discount
     discount: 10,
     price: function () {
       let discountPrice = (this.mrp * this.discount) / 100;
@@ -345,7 +345,7 @@ let latestArr = [
     TotalAmount: 0,
   },
   {
-    img: "https://th.bing.com/th/id/OIP.qOsubMYmEraDMa41GkdbRAHaHa?w=193&h=193&c=7&r=0&o=5&pid=1.7",
+    img: "https://m.media-amazon.com/images/I/71y84TN3gkL._AC_.jpg",
     productName: "Recco lazer Printer All in one (Refurbished)",
     productCategory: "printer",
     mrp: 4000, // This remains the same as the discount was already 20%
