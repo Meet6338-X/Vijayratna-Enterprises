@@ -1,70 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Vijayratna Enterprises</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      @media print {
-        .no-print {
-          display: none;
-        }
-      }
-    </style>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-indigo-600 text-white p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center">
-          <img
-            src="Images/v.png"
-            alt="Vijayratna Logo"
-            class="w-10 h-10 mr-2"
-          />
-          <h1 class="text-2xl font-bold">Vijayratna Blog</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Printer Longevity Tips | Vijayratna Enterprises Blog</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Learn how to make your printer last longer with expert tips from Vijayratna Enterprises. Essential maintenance guide for LaserJet and Inkjet printers." />
+  <meta name="keywords" content="Printer Maintenance Tips, LaserJet Longevity, Toner Care, Vijayratna Blog" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="Images\v.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4f46e5",
+            secondary: "#6366f1",
+            dark: "#1e1b4b",
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .glass-header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .blog-content p {
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+
+    .blog-content h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 40px 0 20px;
+      color: #1e1b4b;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden pt-24">
+  <!-- Navigation Header -->
+  <header class="fixed top-0 w-full z-[100] glass-header border-b border-gray-100">
+    <div class="container mx-auto flex flex-wrap items-center justify-between px-6 py-4">
+      <a class="flex items-center group" href="index.html">
+        <div
+          class="relative w-10 h-10 mr-3 overflow-hidden rounded-xl bg-indigo-50 flex items-center justify-center border border-indigo-100">
+          <img src="Images/v.png" alt="Vijayratna Logo"
+            class="w-7 h-7 object-contain transition-transform duration-500 group-hover:scale-110" />
         </div>
-        <button
-          onclick="window.print()"
-          class="bg-white text-indigo-600 px-4 py-2 rounded shadow no-print"
-        >
-          Print Page
-        </button>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold font-heading tracking-tight text-dark leading-none">Vijayratna</span>
+          <span class="text-[10px] font-bold text-indigo-500 uppercase tracking-widest mt-1">Enterprises</span>
+        </div>
+      </a>
+
+      <button id="menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+        <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path id="menu-icon" d="M4 6h16M4 12h16M4 18h16"></path>
+          <path id="close-icon" class="hidden" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <nav id="menu" class="hidden lg:flex w-full lg:w-auto mt-4 lg:mt-0 items-center gap-2 text-sm font-semibold">
+        <a class="px-5 py-2 rounded-full text-gray-600 hover:text-primary hover:bg-indigo-50 transition-all"
+          href="index.html#home">Home</a>
+        <a class="px-5 py-2 rounded-full text-gray-600 hover:text-primary hover:bg-indigo-50 transition-all font-bold text-indigo-600"
+          href="index.html#Products">Refurbished Stock</a>
+        <a class="px-5 py-2 rounded-full text-gray-600 hover:text-primary hover:bg-indigo-50 transition-all"
+          href="./Productm.html">Services</a>
+        <a class="px-5 py-2 rounded-full text-gray-600 hover:text-primary hover:bg-indigo-50 transition-all"
+          href="index.html#About">About</a>
+        <a class="px-5 py-2 rounded-full text-gray-600 hover:text-primary hover:bg-indigo-50 transition-all"
+          href="index.html#Contact">Contact</a>
+        <a class="px-5 py-2 rounded-full bg-indigo-600 text-white shadow-lg shadow-indigo-100"
+          href="./blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-20 lg:py-32">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <div class="mb-12">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-600 text-[10px] font-bold uppercase tracking-widest mb-6 border border-indigo-100">
+          Expert Guide
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-extrabold font-heading text-dark leading-tight mb-8">
+          How to Make Your Printer Last Longer
+        </h1>
+        <div class="flex items-center gap-4 text-sm text-gray-500 font-medium">
+          <span class="flex items-center gap-2">
+            <span
+              class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 text-xs font-bold">VS</span>
+            By Vidyut Shah
+          </span>
+          <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+          <span>10 Min Read</span>
+        </div>
       </div>
-    </header>
 
-    <!-- Blog Content -->
-    <main class="container mx-auto py-8 px-4">
-      <article class="bg-white p-6 rounded shadow-md">
-        <h2 class="text-2xl font-bold mb-2">Top 5 Business Trends of 2025</h2>
-        <p class="text-sm text-gray-500 mb-4">
-          Posted on June 3, 2025 by Admin
+      <div class="rounded-[3rem] overflow-hidden shadow-2xl mb-16">
+        <img src="https://img.freepik.com/free-photo/industrial-printer-printing-blueprints_23-2149118412.jpg?w=1380"
+          alt="Printer Maintenance" class="w-full h-[400px] object-cover">
+      </div>
+
+      <article class="blog-content text-lg text-gray-600 leading-relaxed">
+        <p class="text-xl font-medium text-dark leading-relaxed mb-10">
+          In today's fast-paced business environment, your printer is more than just a peripheral—it's a critical
+          operational node. At Vijayratna Enterprises, we've seen how proper care can extend service life by years.
         </p>
-        <p class="mb-4">
-          In today's fast-changing world, businesses must adapt to new trends to
-          stay relevant. Here are the top 5 business trends dominating 2025:
+
+        <h2>1. Precision Toner Management</h2>
+        <p>Using high-density premium powder in your cartridges isn't just about print quality; it's about fuser health.
+          Poor quality toner can cause buildup on the Teflon surface, leading to early failure of the heating element.
         </p>
-        <ul class="list-disc pl-5 space-y-2 mb-4">
-          <li>AI-Powered Automation</li>
-          <li>Sustainable and Eco-Friendly Practices</li>
-          <li>Remote and Hybrid Work Models</li>
-          <li>Personalized Customer Experiences</li>
-          <li>Digital Payments and Fintech Growth</li>
-        </ul>
-        <p>
-          At Vijayratna Enterprises, we are embracing these trends to deliver
-          the best value to our clients and partners.
+
+        <div class="bg-indigo-600 p-10 rounded-[2.5rem] text-white my-16 shadow-2xl shadow-indigo-100">
+          <h4 class="text-2xl font-bold mb-4">Did You Know?</h4>
+          <p class="text-indigo-100 mb-0 leading-relaxed">Regular cleaning of the pickup rollers with specialized
+            solution can prevent 80% of common paper jam protocols.</p>
+        </div>
+
+        <h2>2. Environmental Calibration</h2>
+        <p>Printers are sensitive to particulate matter and humidity. Ensuring your hardware operates in a
+          climate-controlled environment reduces the static charge on the drum unit, ensuring consistently sharp output.
         </p>
+
+        <p>Stay tuned for more updates on hardware re-engineering and performance optimization. For any queries, connect
+          with our support node.</p>
+
+        <div class="mt-20 pt-12 border-t border-gray-100">
+          <button onclick="window.print()"
+            class="px-8 py-4 bg-dark text-white rounded-2xl font-bold hover:bg-slate-800 transition-all transform active:scale-95 shadow-xl shadow-gray-200">
+            Print Article
+          </button>
+        </div>
       </article>
-    </main>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer class="bg-indigo-600 text-white text-center p-4 mt-8">
-      <p>&copy; 2025 Vijayratna Enterprises. All rights reserved.</p>
-    </footer>
-  </body>
+  <footer class="bg-dark py-16">
+    <div class="container px-6 mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+        <div class="flex items-center text-white">
+          <div
+            class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center border border-indigo-500/30 mr-4">
+            <img src="Images/v.png" class="w-6 h-6" alt="v">
+          </div>
+          <span class="text-xl font-extrabold font-heading">Vijayratna</span>
+        </div>
+        <div class="flex gap-8 text-xs font-bold text-gray-400 uppercase tracking-widest">
+          <a href="index.html#home" class="hover:text-white transition-colors">Home</a>
+          <a href="index.html#Products" class="hover:text-white transition-colors">Products</a>
+          <a href="index.html#Services" class="hover:text-white transition-colors">Services</a>
+          <a href="index.html#About" class="hover:text-white transition-colors">About</a>
+        </div>
+      </div>
+      <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-sm text-gray-500">&copy; 2026 Vijayratna Enterprises. Established in Pune, Maharashtra.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
